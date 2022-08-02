@@ -1,4 +1,17 @@
-console.group('Task 1');
-console.log('sveikas pasauli');
+import primitiveTypes from './other/primitive-types.js';
+import eventListener from './other/event-listener.js';
 
-console.groupEnd();
+const compilation = () => {
+  console.group('Task 1');
+  console.log('sveikas pasauli');
+
+  console.groupEnd();
+};
+
+const init = () => {
+  compilation();
+  primitiveTypes();
+  eventListener();
+};
+
+init();
