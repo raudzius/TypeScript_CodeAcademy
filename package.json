@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/raudzius/TypeScript_CodeAcademy/issues"
   },
-  "homepage": "https://github.com/raudzius/TypeScript_CodeAcademy#readme"
+  "homepage": "https://github.com/raudzius/TypeScript_CodeAcademy#readme",
+  "devDependencies": {
+    "typescript": "^4.7.4"
+  }
 }
