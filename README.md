@@ -1,1 +1,1 @@
-# TypeScript
+# TypeScript - TypeScript įvadas
