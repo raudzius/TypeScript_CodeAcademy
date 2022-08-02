@@ -1,1 +1,1 @@
-# TypeScript
+# CodeAcademyOnline - Įvadas į TypeScript
