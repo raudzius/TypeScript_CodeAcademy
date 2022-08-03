@@ -19,7 +19,7 @@ console.groupEnd();
 
 console.groupCollapsed('2 - https://edabit.com/challenge/9KEKJG5PZTFmG3Zau ');
 {
-  const addKeyValuePair = (obj: {}, key: string, value: number): object => Object.assign(
+  const addKeyValuePair = (obj: object, key: string, value: number): object => Object.assign(
     obj,
     { [key]: value },
   );
