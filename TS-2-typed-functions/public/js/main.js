@@ -1,10 +1,6 @@
 "use strict";
-const addNumbers = (num1, num2) => {
-    return num1 + num2;
-};
-const joinStrings = (str1, str2) => {
-    return str1 + ' ' + str2;
-};
+const addNumbers = (num1, num2) => num1 + num2;
+const joinStrings = (str1, str2) => `${str1} ${str2}`;
 const createInitials = function (str1, str2) {
     return str1[0].toLocaleUpperCase() + str2[0].toLocaleUpperCase();
 };
@@ -22,11 +18,9 @@ function printRedText(text) {
 printRedText('printRed funkcijos argumentas');
 console.group('1. Aprašykite funkcijoms tipus jas deklaruojant');
 {
-    const multiply = (a, b) => {
-        return a * b;
-    };
-    const power = function (base, power) {
-        return base ** power;
+    const multiply = (a, b) => a * b;
+    const power = function (base, pow) {
+        return base ** pow;
     };
     const squareRoot = (number) => number ** (1 / 2);
     const root = function (base, nthRoot) {
@@ -46,11 +40,9 @@ console.group('1. Aprašykite funkcijoms tipus jas deklaruojant');
 console.groupEnd();
 console.group('2. Aprašykite funkcijų tipus prieš deklaruojant funkcijas');
 {
-    const multiply = (a, b) => {
-        return a * b;
-    };
-    const power = function (base, power) {
-        return base ** power;
+    const multiply = (a, b) => a * b;
+    const power = function (base, pow) {
+        return base ** pow;
     };
     const squareRoot = (number) => number ** (1 / 2);
     const root = function (base, nthRoot) {
