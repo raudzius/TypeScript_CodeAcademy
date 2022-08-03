@@ -17,8 +17,13 @@ console.groupCollapsed('1 - https://edabit.com/challenge/nuXdWHAoHv9y38sn7 ');
 }
 console.groupEnd();
 
-// console.groupCollapsed('2 - https://edabit.com/challenge/9KEKJG5PZTFmG3Zau ');
-// // {
+console.groupCollapsed('2 - https://edabit.com/challenge/9KEKJG5PZTFmG3Zau ');
+{
+  const addKeyValuePair = (obj: {}, key: string, value: number): object => Object.assign(
+    obj,
+    { [key]: value },
+  );
 
-// // }
-// console.groupEnd();
+  console.log(addKeyValuePair({ piano: 500, stereo: 300 }, 'Caligula', 440));
+}
+console.groupEnd();

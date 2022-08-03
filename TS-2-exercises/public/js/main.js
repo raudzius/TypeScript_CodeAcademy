@@ -10,4 +10,10 @@ console.groupCollapsed('1 - https://edabit.com/challenge/nuXdWHAoHv9y38sn7 ');
     console.log(sortDrinks(drinks));
 }
 console.groupEnd();
+console.groupCollapsed('2 - https://edabit.com/challenge/9KEKJG5PZTFmG3Zau ');
+{
+    const addKeyValuePair = (obj, key, value) => Object.assign(obj, { [key]: value });
+    console.log(addKeyValuePair({ piano: 500, stereo: 300 }, 'Caligula', 440));
+}
+console.groupEnd();
 //# sourceMappingURL=main.js.map
