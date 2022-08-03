@@ -37,20 +37,19 @@ const people: Person[] = [{
   weight: 45,
 }];
 
-// Kaip ir kiti tipai, masyvai gali būti naudojami funkcijų parametrams arba funkcijų grąžinimo tipams aprašyti
+// Kaip ir kiti tipai, masyvai gali būti naudojami funkcijų parametrams arba
+//  funkcijų grąžinimo tipams aprašyti
 type CreatePeopleArrayFunction = (p1: Person, p2: Person) => Person[];
 
-const printStrings = (strings: string[]): void => {
-  const printString = (str: string): void => console.log(str);
+const printString = (str: string): void => console.log(str);
 
+const printStrings = (strings: string[]): void => {
   strings.forEach(printString);
 };
 
-const sumNumbers = (nums: Array<number>): number => {
-  const numberSumReducer = (sum: number, num: number): number => sum + num;
+const numberSumReducer = (sum: number, num: number): number => sum + num;
 
-  return nums.reduce(numberSumReducer, 0);
-};
+const sumNumbers = (nums: Array<number>): number => nums.reduce(numberSumReducer, 0);
 
 const createPeopleArray: CreatePeopleArrayFunction = (p1, p2) => [p1, p2];
 
@@ -85,13 +84,12 @@ console.group('Užduotys');
 {
   console.group('1. Aprašykite funkcijoms ir kintamiesiems tipus');
   {
-    const numbers: number[] = [1, -8, -6, 7, 5, 1];
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    const numberArray: number[] = [1, -8, -6, 7, 5, 1];
 
-    function addPositiveNumbers(arr) {
-      const positiveNumberReducer = (sum, num) => (num > 0 ? sum + num : sum);
+    const positiveNumberReducer = (sum: number, num: number): number => (num > 0 ? sum + num : sum);
 
-      return arr.reduce(positiveNumberReducer, 0);
-    }
+    const addPositiveNumbers = (arr: number[]): number => arr.reduce(positiveNumberReducer, 0);
 
     console.log({
       numbers,
@@ -108,6 +106,18 @@ console.group('Užduotys');
        * ['Lietuvos', 'Respublikos', 'Televizija'] -> LRT
        * ['Loughing', 'Out', 'Loud'] -> LOL
     */
+
+    const stringMatrix: string[][] = [
+      ['Lietuviškas', 'Nepriklausomas', 'Kanalas'],
+      ['Lietuvos', 'Respublikos', 'Televizija'],
+      ['Loughing', 'Out', 'Loud']];
+
+    const createAbbreviation = (stringArray: string[]): string => stringArray.reduce((
+      prevAbbr,
+      currString,
+    ) => prevAbbr + currString[0], '');
+
+    stringMatrix.forEach((array) => { console.log(createAbbreviation(array)); });
   }
   console.groupEnd();
 
@@ -119,6 +129,16 @@ console.group('Užduotys');
        * [98, 74, 5, 0] -> 0
        * [17, 10, 5] -> 850
     */
+
+    const numberMatrix = [[1, 7, 8],
+      [98, 74, 5, 0],
+      [17, 10, 5]];
+
+    const multiplyNumbers = (array:number[]):number => array.reduce(
+      (prevSum, currNum) => prevSum * currNum,
+    );
+
+    numberMatrix.forEach((numArray) => console.log(multiplyNumbers(numArray)));
   }
   console.groupEnd();
 }
