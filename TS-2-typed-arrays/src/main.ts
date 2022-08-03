@@ -1,3 +1,4 @@
+/* eslint-disable no-lone-blocks */
 /*
   Aprašant masyvų tipus reikia nurodyti kokie elementai sudarys masyvai, galimos 2 sintaksės:
     * tipas[] -> number[], string[], Person[] ir t.t.
