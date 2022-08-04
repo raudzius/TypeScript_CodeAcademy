@@ -1,22 +1,13 @@
 {
-  "name": "typescript",
+  "name": "ts-ivadas",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "labai geras ivadas",
+  "main": "src/main.ts",
   "scripts": {
-      "watch": "tsc -w"
+    "start": "tsc -w"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/raudzius/TypeScript_CodeAcademy.git"
-  },
-  "keywords": [],
-  "author": "",
+  "author": "Zilvinas Vidmantas",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/raudzius/TypeScript_CodeAcademy/issues"
-  },
-  "homepage": "https://github.com/raudzius/TypeScript_CodeAcademy#readme",
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^5.32.0",
     "@typescript-eslint/parser": "^5.32.0",

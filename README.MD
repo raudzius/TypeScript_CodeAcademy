@@ -1,4 +1,4 @@
-# CodeAcademyOnline - Įvadas į TypeScript
+# TS intro
 
 ## Required programs
   * Node.js (8.0.1 or later)
@@ -13,3 +13,4 @@
 2. open CLI in current folder and launch command:
 ```
 npm start
+```
