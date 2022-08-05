@@ -1,6 +1,6 @@
 "use strict";
 const someNumber = 17;
-const title = "Grace";
+const title = 'Grace';
 const formAddUser = document.querySelector('#form-add-user');
 formAddUser.onsubmit = (e) => {
     e.preventDefault();
@@ -10,6 +10,7 @@ console.group('Assertions - užduotys');
 {
     console.group('1. Sukurkite HTML mygtuką ir uždėkite jam įvykio klausiklį, jog paspaudus, būt spausdinamas tekstas "paspausta!"');
     {
+        const button = document.querySelector('#assertions button');
     }
     console.groupEnd();
     console.group('2. Sukurkite <div> elementą ir papildikyte jo turinį mažu kvadaratėliu kiekvieną kart, kuomet paspaudžiamas [1.] mygtukas');

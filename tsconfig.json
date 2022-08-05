@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "es2018", // į kokią JavaScript versiją paversti kodą                 
+    "target": "ESNext", // į kokią JavaScript versiją paversti kodą                 
     "rootDir": "./src", // aplankas, kuriame ieškoti TypeScript failų                           
     "outDir": "./public/js", // aplankas į kurį sudėti transpiliuotus JavaScript failus                             
     "module": "commonjs", // Transpiliuojamų failų modulio tipas                        
@@ -24,4 +24,5 @@
     "removeComments": true, // ar pašalinti komentarus sukompiliuotuose failuose                    
     "skipLibCheck": true // ar praleisti tipų tikrinimą naudojant bibliotekas
   },
+  "include": ["./src/assertions.ts"]
 }
