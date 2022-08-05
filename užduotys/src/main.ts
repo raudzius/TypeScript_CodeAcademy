@@ -10,7 +10,7 @@ console.groupEnd();
 console.group('2. Parašykite funkciją, kuri atspausdina kiekvieno masyvo elemento indeksus eilutėmis');
 {
   // Užduoties sprendimas ir užduoties sprendimo atspausdinimas su duomenimis
-  const logArrayIndexColumn = (array: any[]): void => console.log(`[${array}] index column:\n${array.map((item, index) => index).join('\n')}`);
+  const logArrayIndexColumn = (array: any[]): void => console.log(`[${array}] index column:\n${array.map((__, index) => index).join('\n')}`);
   logArrayIndexColumn([1, 2, 3, 4, 'aaaaaaaaaaa', true]);
 }
 console.groupEnd();
@@ -44,7 +44,7 @@ console.groupEnd();
 
 console.group('6. Parašykite funkciją, kuri atspausdina kiekvieno masyvo elemento indeksus vienoje eilutėje: 0 1 2 3 ...');
 {
-  const logArrayIndexesInline = (array: any[]): void => console.log(`[${array}] index inline:\n${array.map((item, index) => index).join(' ')}`);
+  const logArrayIndexesInline = (array: any[]): void => console.log(`[${array}] index inline:\n${array.map((__, index) => index).join(' ')}`);
   logArrayIndexesInline([1, 2, 3, 4, 'aaaaaaaaaaa', true]);
   // Užduoties sprendimas ir užduoties sprendimo atspausdinimas su duomenimis
 }

@@ -7,7 +7,7 @@ console.group('1. Parašykite funkciją, kuri atspausdina paskutinio masyvo elem
 console.groupEnd();
 console.group('2. Parašykite funkciją, kuri atspausdina kiekvieno masyvo elemento indeksus eilutėmis');
 {
-    const logArrayIndexColumn = (array) => console.log(`[${array}] index column:\n${array.map((item, index) => index).join('\n')}`);
+    const logArrayIndexColumn = (array) => console.log(`[${array}] index column:\n${array.map((__, index) => index).join('\n')}`);
     logArrayIndexColumn([1, 2, 3, 4, 'aaaaaaaaaaa', true]);
 }
 console.groupEnd();
@@ -31,7 +31,7 @@ console.group('5. Parašykite funkciją, kuri atspausdina masyvo elementus atbul
 console.groupEnd();
 console.group('6. Parašykite funkciją, kuri atspausdina kiekvieno masyvo elemento indeksus vienoje eilutėje: 0 1 2 3 ...');
 {
-    const logArrayIndexesInline = (array) => console.log(`[${array}] index inline:\n${array.map((item, index) => index).join(' ')}`);
+    const logArrayIndexesInline = (array) => console.log(`[${array}] index inline:\n${array.map((__, index) => index).join(' ')}`);
     logArrayIndexesInline([1, 2, 3, 4, 'aaaaaaaaaaa', true]);
 }
 console.groupEnd();
