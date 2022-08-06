@@ -1,5 +1,8 @@
+/* eslint no-lone-blocks: 0 */
+
 /*
-  Union operator (Apjungimo operatorius) yra skirtas aprašytis tipus, kurie apjungia kelis kitus tipus
+  Union operator (Apjungimo operatorius) yra skirtas aprašytis tipus,
+   kurie apjungia kelis kitus tipus
 */
 
 // Union operatorius deklaruojant kintamajį
@@ -40,7 +43,7 @@ const call: Call = (callee) => {
   } else {
     console.log('Skambinama:', callee.mobile);
   }
-}
+};
 
 // Union panaudojimas aprašant masyvus
 
@@ -57,27 +60,43 @@ const flags2: FlagOptions = [true, false, false, true, true];
 console.group('Union operators - užduotys');
 {
   // ↓↓↓↓ Tipus apraškite čia ↓↓↓↓
-
+  type Accommodation = { type:'House' | 'Flat' };
+  type Car = {
+    transmission:'Automatic' | 'Manual'
+  };
+  type PropertyFeatureArray = Accommodation[] | Car[];
   // ↑↑↑↑ Tipus apraškite čia ↑↑↑↑
 
   console.group('1. Aprašykite objekto tipą Accommodation, kurio savybė "type" būtų, "House" arba "Flat"');
   {
-    // sprendimo pavyzdžius spausdinkite čia 
+    const house: Accommodation = { type: 'House' };
+    const flat: Accommodation = { type: 'Flat' };
+    // sprendimo pavyzdžius spausdinkite čia
+    console.log([house, flat]);
   }
   console.groupEnd();
 
   console.group('2. Aprašykite objekto tipą Car, kurio savybė "transmission" būtų, "Automatic" arba "Manual"');
   {
-    // sprendimo pavyzdžius spausdinkite čia 
+    const car1:Car = {
+      transmission: 'Automatic',
+    };
+
+    const car2:Car = {
+      transmission: 'Manual',
+    };
+    // sprendimo pavyzdžius spausdinkite čia
+    console.log([car1, car2]);
   }
   console.groupEnd();
 
   console.group('3. Aprašykite tipą, kuris kintamajam leistų būti: arba Accommodation masyvu, arba Car masyvu');
   {
-    // sprendimo pavyzdžius spausdinkite čia 
+    const ownedCars:PropertyFeatureArray = [{ transmission: 'Manual' }, { transmission: 'Automatic' }];
+    const ownedHomes:PropertyFeatureArray = [{ type: 'Flat' }, { type: 'House' }, { type: 'Flat' }];
+    // sprendimo pavyzdžius spausdinkite čia
+    console.log({ ownedCars, ownedHomes });
   }
   console.groupEnd();
-
 }
 console.groupEnd();
-
